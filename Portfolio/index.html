@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Hamza Bekkaoui</title>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div class="container row">
+
+
+            <div class="logo">
+                <h1>Hamza Bekkaoui</h1>
+            </div>
+            <div class="bar active"><i class="fa-solid fa-bars"></i></div>
+            <div class="cancel"><i class="fa-solid fa-x"></i></div>
+            <div class="navBar">
+
+                <a href="#Home" id="home"></a>
+                <a href="#AboutMe" id="about"></a>
+                <a href="#Resume" id="resume"></a>
+                <a href="#Project" id="project"></a>
+                <a href="#Contact" id="contact"></a>
+                <div class="multi-language">
+                    <button type="button" class="btn-language active" onclick="switchLanguage('en')">EN</button>
+                    <button type="button" class="btn-language" onclick="switchLanguage('fr')">FR</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="landing" id="Home">
+
+            <div class="container landing-row">
+
+                <div class="landing-info">
+                    <h1 id="greeting"></h1>
+                    <h1 id="dev-stack"></h1>
+                    <div class="social-media">
+                        <a href="https://github.com/bekkaoui99">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hamza-bekkaoui/">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="mailto:bekkaouihamza1@gmail.com">
+                            <i class="fa-solid fa-at"></i>
+                        </a>
+                    </div>
+                    <a class="landing-info-btn" href="#about-me" id="more-about-me"></a>
+                    <a class="landing-info-btn" id="download-cv"></a>
+                </div>
+                <div class="landing-img">
+                    <img src="images/HamzaBekkaoui.jpg" alt="my peronal image">
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <svg class="about-me-top-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ebebeb" fill-opacity="1"
+                d="M0,160L48,149.3C96,139,192,117,288,133.3C384,149,480,203,576,229.3C672,256,768,256,864,229.3C960,203,1056,149,1152,117.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <section class="about-me" id="AboutMe">
+
+            <div class="title">
+                <h1>About Me</h1>
+            </div>
+
+            <div class="container">
+
+                <div class="about-me-card">
+
+                    <p id="about-me-card-content"></p>
+
+                </div>
+
+
+
+
+            </div>
+
+
+        </section>
+        <svg class="about-me-bottom-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ebebeb" fill-opacity="1"
+                d="M0,224L48,218.7C96,213,192,203,288,192C384,181,480,171,576,149.3C672,128,768,96,864,90.7C960,85,1056,107,1152,138.7C1248,171,1344,213,1392,234.7L1440,256L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+
+
+        <section class="resume" id="Resume">
+
+            <div class="title">
+                <h1>Resume</h1>
+            </div>
+            <div class="container resume-row">
+
+                <div class="education">
+                    <h1 class="resume-title">Education</h1>
+                    <div class="timeLine">
+                        <div class="timeLine-item master">
+                            <h1 class="date"></h1>
+                            <h3 class="place"></h3>
+                            <h1 class="education-title"></h1>
+                        </div>
+                        <div class="timeLine-item Bachelor">
+                            <h1 class="date">2019 - 2021</h1>
+                            <h3 class="place">ISTA HAY NAHDA RABAT</h3>
+                            <h1 class="education-title">Technicien specialisé - Developpement informatique</h1>
+                        </div>
+                        <div class="timeLine-item AssociateDegree">
+                            <h1 class="date">2019 - 2021</h1>
+                            <h3 class="place">ISTA HAY NAHDA RABAT</h3>
+                            <h1 class="education-title">Technicien specialisé - Developpement informatique</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="experience">
+                    <h1 class="resume-title">Experience</h1>
+                    <div class="timeLine">
+                        <div class="timeLine-item CNRST">
+                            <h1 class="date"></h1>
+                            <h3 class="place"></h3>
+                            <h1 class="experience-title"></h1>
+                            <div class="experience-description">
+                                <p>During my internship at the Centre National pour la Recherche Scientifique et
+                                    Technique, I focused on developing and refining applications. I containerized and
+                                    deployed the Hyperglass application, implemented Single Sign-On (SSO) with
+                                    Shibboleth, automated installation and configuration processes, and improved the
+                                    interface of the Shibboleth application.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="timeLine-item UIR">
+                            <h1 class="date"></h1>
+                            <h3 class="place"></h3>
+                            <h1 class="experience-title"></h1>
+                            <div class="experience-description">
+                                <p>During my internship at the Centre National pour la Recherche Scientifique et
+                                    Technique, I focused on developing and refining applications. I containerized and
+                                    deployed the Hyperglass application, implemented Single Sign-On (SSO) with
+                                    Shibboleth, automated installation and configuration processes, and improved the
+                                    interface of the Shibboleth application.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <h1 class="resume-title">skills</h1>
+                    <div class="skills-list">
+
+                        <p>JAVA</p>
+                        <p>SPRING FREAMWORD</p>
+                        <p>SPRING BOOT</p>
+                        <P>SPRING DATA</P>
+                        <P>SPRING SECURITY</P>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <P>BOOTSTRAP</P>
+                        <p>JAVASCRIPT</p>
+                        <P>TYPESCRIPT</P>
+                        <P>ANGULAR</P>
+                        <p>DOCKER</p>
+                    </div>
+                </div>
+                <div class="languages">
+                    <h1 class="resume-title">languages</h1>
+                    <div class="languages-list">
+                        <p>ARABIC</p>
+                        <p>ENGLISH</p>
+                        <p>FRENCH </p>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <section class="project" id="Project">
+
+            <div class="title">
+                <h1>Projects</h1>
+            </div>
+
+
+            <div class="container project-row">
+
+                <div class="project-card">
+                    <h1 class="card-title">E-Commerce Rest Api</h1>
+                    <div class="card-info">
+                        <div class="description">
+                            <h1>Description:</h1>
+                            <p id="ecommerce-description-content">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Culpa ex quo odio cumque ullam!
+                                Vitae, repellendus error cum impedit in distinctio maxime rem. Eveniet, hic temporibus
+                                labore mollitia accusamus modi!</p>
+                        </div>
+                        <div class="technolegy">
+                            <h1>Technologies :</h1>
+                            <div class="technolegies">
+                                <p>java</p>
+                                <p>spring freamword</p>
+                                <p>spring boot</p>
+                                <p>spring data jpa</p>
+                                <p>spring security</p>
+                                <p>jwt</p>
+                                <p>mysql</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <div class="button">
+                            <a href="https://github.com/bekkaoui99/Ecommerce-REST-API">Github</a>
+                            <a href="">demo</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h1 class="card-title">Blog Rest Api</h1>
+                    <div class="card-info">
+                        <div class="description">
+                            <h1>Description:</h1>
+                            <p id="blog-description-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Culpa ex quo odio cumque ullam!
+                                Vitae, repellendus error cum impedit in distinctio maxime rem. Eveniet, hic temporibus
+                                labore mollitia accusamus modi!</p>
+                        </div>
+                        <div class="technolegy">
+                            <h1>Technologies:</h1>
+                            <div class="technolegies">
+                                <p>java</p>
+                                <p>spring freamword</p>
+                                <p>spring boot</p>
+                                <p>spring data jpa</p>
+                                <p>spring security</p>
+                                <p>jwt</p>
+                                <p>mysql</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-button">
+                        <div class="button">
+                            <a href="https://github.com/bekkaoui99/build-Blog-RESTAPI-with-Spring-boot">Github</a>
+                            <a href="">demo</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h1 class="card-title">Event Management</h1>
+                    <div class="card-info">
+                        <div class="description">
+                            <h1>Description:</h1>
+                            <p id="event-description-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Culpa ex quo odio cumque ullam!
+                                Vitae, repellendus error cum impedit in distinctio maxime rem. Eveniet, hic temporibus
+                                labore mollitia accusamus modi!</p>
+                        </div>
+                        <div class="technolegy">
+                            <h1>Technologies :</h1>
+                            <div class="technolegies">
+                                <p>Html</p>
+                                <p>Css</p>
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-button">
+                        <div class="button">
+                            <a href="https://github.com/bekkaoui99/EventsManagement">Github</a>
+                            <a href="">demo</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h1 class="card-title">Question Card Game</h1>
+                    <div class="card-info">
+                        <div class="description">
+                            <h1>Description:</h1>
+                            <p id="card-description-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Culpa ex quo odio cumque ullam!
+                                Vitae, repellendus error cum impedit in distinctio maxime rem. Eveniet, hic temporibus
+                                labore mollitia accusamus modi!</p>
+                        </div>
+                        <div class="technolegy">
+                            <h1>Technologies :</h1>
+                            <div class="technolegies">
+                                <p>Html</p>
+                                <p>Css</p>
+                                <p>Javascript</p>
+                            </div>
+                        </div>
+
+                        <div class="card-button">
+                            <div class="button">
+                                <a href="https://github.com/bekkaoui99/QuestionCardGame">Github</a>
+                                <a href="">demo</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+
+        <section class="contact" id="Contact">
+
+            <div class="title">
+                <h1>Contact Me</h1>
+            </div>
+
+            <div class="container contact-row">
+
+                <div class="conatct-form">
+                    <form action="post">
+                        <div class="contact-form-row">
+                            <input type="text" name="fullName" id="" placeholder="Your Full Name">
+                            <input type="text" name="jubject" id="" placeholder="Email Subject">
+                        </div>
+
+                        <input type="email" name="email" id="" placeholder="Your Email Address">
+                        <textarea name="message" id="" placeholder="message"></textarea>
+                        <div class="contact-form-button">
+                            <input type="button" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+        <svg class="footer-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#0b2027" fill-opacity="1"
+                d="M0,224L48,213.3C96,203,192,181,288,165.3C384,149,480,139,576,160C672,181,768,235,864,234.7C960,235,1056,181,1152,149.3C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <div class="end">
+
+            <div class="social-media">
+                <a href="https://github.com/bekkaoui99">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hamza-bekkaoui/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:bekkaouihamza1@gmail.com">
+                    <i class="fa-solid fa-at"></i>
+                </a>
+                <a href="#home">
+                    <i class="fa-solid fa-circle-up"></i>
+                </a>
+            </div>
+
+            <p>Copyright © <span class="year"></span> : <span class="company-name">hamza bekkaoui</span> All rights
+                reserved</p>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/master.js"></script>
+</body>
+
+</html>
