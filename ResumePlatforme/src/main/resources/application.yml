@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: CvRestApi
+  datasource:
+    url: jdbc:mysql://localhost:3306/CVRestApi?createDataBaseIfNotExist
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+

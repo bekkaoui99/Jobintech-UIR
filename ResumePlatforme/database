@@ -1,0 +1,42 @@
+CREATE TABLE Information (
+                             id INT AUTO_INCREMENT PRIMARY KEY,
+                             firstName VARCHAR(255),
+                             lastName VARCHAR(255)
+);
+CREATE TABLE CV (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    information_id INT,
+                    FOREIGN KEY (information_id) REFERENCES Information(id)
+);
+
+CREATE TABLE Experience (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            title VARCHAR(255),
+                            start_date DATE,
+                            end_date DATE
+);
+
+
+
+
+CREATE TABLE Technology (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            name VARCHAR(255),
+                            technologyLevel VARCHAR(255)
+);
+
+CREATE TABLE CV_Experience (
+                               cv_id INT,
+                               experience_id INT,
+                               PRIMARY KEY (cv_id, experience_id),
+                               FOREIGN KEY (cv_id) REFERENCES CV(id),
+                               FOREIGN KEY (experience_id) REFERENCES Experience(id)
+);
+
+CREATE TABLE CV_Technology (
+                               cv_id INT,
+                               technology_id INT,
+                               PRIMARY KEY (cv_id, technology_id),
+                               FOREIGN KEY (cv_id) REFERENCES CV(id),
+                               FOREIGN KEY (technology_id) REFERENCES Technology(id)
+);
